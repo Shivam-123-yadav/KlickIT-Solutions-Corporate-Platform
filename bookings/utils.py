@@ -605,9 +605,9 @@ def send_whatsapp_message(phone_number, message, pdf_path=None):
     Send WhatsApp message using Twilio API
     """
     # Twilio credentials (replace with your actual credentials)
-    ACCOUNT_SID = 'AC687bb3690ef5241b14dad3d0c1946e82'
-    AUTH_TOKEN = '41b894551576a8bae4e1427340838eb3'
-    WHATSAPP_FROM = 'whatsapp:+917972692688'
+    ACCOUNT_SID = ''
+    AUTH_TOKEN = ''
+    WHATSAPP_FROM = ''
     
     # Format phone number
     if not phone_number.startswith('+'):
