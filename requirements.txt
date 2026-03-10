@@ -1,0 +1,43 @@
+# Django Framework
+Django==4.2.7
+
+# Database
+mysqlclient==2.2.0  # For MySQL connection
+
+# PDF Generation
+reportlab==4.0.7
+
+# HTTP Requests
+requests==2.31.0
+
+# Email (built-in with Django, but for advanced features)
+django-sendgrid-v5==1.2.3  # Optional: if using SendGrid
+
+# Date/Time utilities
+python-dateutil==2.8.2
+
+# Environment variables
+python-decouple==3.8  # For managing .env files
+
+# WhatsApp/Twilio
+twilio==8.10.0
+
+# Timezone support
+pytz==2023.3
+
+# JSON handling
+simplejson==3.19.2
+
+# CORS Headers (if needed for API)
+django-cors-headers==4.3.1
+
+# Development tools
+django-debug-toolbar==4.2.0  # For debugging in development
+
+# Production server
+gunicorn==21.2.0  # WSGI server for production
+whitenoise==6.6.0  # Static file serving
+
+# Security
+django-environ==0.11.2
+cryptography==41.0.7

@@ -1,0 +1,148 @@
+{% load static %}
+
+<section id="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>Testimonial</h2>
+      <p class="mt-3">What our clients say! Real feedback from real customers</p>
+    </div>
+
+    <div class="row gx-5 mt-3">
+      <div class="col-md-6 mb-3">
+        <h3>Andheri</h3>
+        <div class="testimonials-slider" id="andheri-slider"></div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <h3>Dadar</h3>
+        <div class="testimonials-slider" id="dadar-slider"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- jQuery + Slick -->
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+
+<script>
+// ⭐ Generate stars
+function getStars(rating) {
+  let stars = '';
+  for (let i = 1; i <= 5; i++) {
+    stars += i <= rating
+      ? '<span style="color:#ffba25;">★</span>'
+      : '<span style="color:#ccc;">☆</span>';
+  }
+  return `<div class="stars">${stars}</div>`;
+}
+
+// ⭐ Load reviews
+function loadReviews(jsonFile, sliderId, truncateLength = 100, callback = null) {
+  fetch(jsonFile)
+    .then(res => res.json())
+    .then(data => {
+      const slider = document.getElementById(sliderId);
+      slider.innerHTML = ""; // reset
+
+      data.data.forEach((review, idx) => {
+        const slide = document.createElement('div');
+        slide.className = 'testimonial';
+
+        const fullText = review.review || "";
+        const shortText = fullText.length > truncateLength
+          ? fullText.substring(0, truncateLength) + '...'
+          : fullText;
+
+        slide.innerHTML = `
+          <div class="avatar">
+            <img src="${review.image}" width="50" alt="${review.name}">
+          </div>
+          <div class="content">
+            <div class="name">${review.name}</div>
+            ${getStars(review.rating)}
+            <div class="text">
+              <span class="review-text">${shortText}</span>
+              ${fullText.length > truncateLength ? '<span class="read-more">Read More</span>' : ''}
+            </div>
+          </div>
+        `;
+
+        slider.appendChild(slide);
+
+        // Read more logic
+        const readMore = slide.querySelector('.read-more');
+        if (readMore) {
+          const textSpan = slide.querySelector('.review-text');
+          let expanded = false;
+
+          readMore.onclick = () => {
+            expanded = !expanded;
+            textSpan.textContent = expanded ? fullText : shortText;
+            readMore.textContent = expanded ? 'Show Less' : 'Read More';
+            $(`#${sliderId}`).slick('setPosition');
+          };
+        }
+      });
+
+      if (callback) callback();
+    })
+    .catch(err => console.error(err));
+}
+
+// ⭐ Slick init (FIXED)
+function startSlick(selector) {
+  const $el = $(selector);
+
+  if ($el.hasClass("slick-initialized")) {
+    $el.slick("unslick");
+  }
+
+  $el.css("visibility", "hidden");
+
+  setTimeout(() => {
+    $el.slick({
+      arrows: true,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 600,
+      adaptiveHeight: true,
+      pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            vertical: false
+          }
+        }
+      ]
+    });
+
+    $el.css("visibility", "visible");
+    $el.slick("setPosition");
+    $(window).trigger("resize");
+  }, 200);
+}
+
+// ⭐ Load & init
+Promise.all([
+  new Promise(res => loadReviews('/static/includes/reviews_andheri.json', 'andheri-slider', 100, res)),
+  new Promise(res => loadReviews('/static/includes/reviews_dadar.json', 'dadar-slider', 100, res))
+]).then(() => {
+  setTimeout(() => {
+    startSlick('#andheri-slider');
+    startSlick('#dadar-slider');
+  }, 600);
+});
+</script>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pickup & Delivery Service Confirmation</title>
+
+<style>
+html, body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 0px;
+    margin: 0;
+    color: #222;
+}
+
+.pdf-wrapper {
+  max-width: 960px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(90deg, #0f0bb3, #2575fc);
+  color: #fff;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {font-size: 20px; margin: 0;}
+
+
+.logo img { width: 120px; background: #fff; padding: 8px; border-radius: 8px; }
+
+.content {
+  display: flex;
+  padding: 30px 30px 20px 30px;
+  gap: 25px;
+  background: #71c4ec3b;
+}
+
+.left-panel { width: 65%; }
+.right-panel { width: 35%; border-left: 1px dashed #ccc; padding-left: 20px; position: relative; }
+
+.section { margin-bottom: 20px; }
+.section h2 {
+  font-size: 15px;
+  color: #0f0bb3;
+  border-left: 4px solid #0f0bb3;
+  padding-left: 8px;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+td { padding: 6px 8px; border-bottom: 1px dotted #2d6ed3; }
+td:first-child { font-weight: 600; width: 40%; }
+
+.summary-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.summary-box h3 {
+  background: #2575fc;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.highlight-total {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #0f0bb3, #2575fc);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.footer {
+  background: linear-gradient(90deg, #0f0bb3, #2575fc);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative ;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div class="pdf-wrapper">
+
+<div class="header">
+  <div class="logo">
+    <img src="{{ logo_url }}">
+  </div>
+  <h1>Pickup & Delivery Service Confirmation</h1>
+</div>
+
+<div class="content">
+<div class="left-panel">
+
+<div class="section">
+<h2>Personal Information</h2>
+<table>
+<tr><td>Name</td><td>{{ booking.customer_name }}</td></tr>
+<tr><td>Email</td><td>{{ booking.customer_email }}</td></tr>
+<tr><td>Mobile</td><td>{{ booking.customer_mobile }}</td></tr>
+<tr><td>Address</td><td>{{ booking.customer_address }}</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Device Information</h2>
+<table>
+<tr><td>Device</td><td>{{ booking.device_service }}</td></tr>
+<tr><td>Brand</td><td>{{ booking.brand_name }}</td></tr>
+<tr><td>Model</td><td>{{ booking.model_name|default:"N/A" }}</td></tr>
+<tr><td>Issue</td><td>{{ booking.write_issue }}</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Service Details</h2>
+<table>
+<tr><td>Service Center</td><td>{{ booking.service_center_name }}</td></tr>
+<tr><td>Booking Date</td><td>{{ booking.booking_date }}</td></tr>
+<tr><td>Time Slot</td><td>{{ booking.select_time_slot }}</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Transaction Details</h2>
+<table>
+<tr><td>Transaction ID</td><td>{{ booking.transaction_id }}</td></tr>
+<tr><td>Payment</td><td>{{ booking.payment_method }}</td></tr>
+<tr><td>Date</td><td>{{ booking.payment_time }}</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="right-panel">
+<div class="summary-box">
+<h3>Service Charges</h3>
+<table>
+<tr><td>Pickup & Drop</td><td>₹ {{ booking.pickup_drop_charges }}</td></tr>
+<tr><td>Diagnostic</td><td>₹ {{ booking.laptop_diagnostic_charge }}</td></tr>
+<tr><td><b>Total</b></td><td><b>₹ {{ booking.total_charges }}</b></td></tr>
+</table>
+
+<div class="highlight-total">
+Total Payable ₹ {{ booking.total_charges }}
+</div>
+</div>
+ 
+<img src="{{ side_image_url }}" style="width:100%; margin-top:20px; position: absolute; z-index:0; bottom: -50px;" />
+</div>
+
+</div>
+
+<div class="footer">
+Need help? Contact us on WhatsApp <a href="https://wa.me/919987223322?text=Hello%2C%20Required%20Assistance%20for%20{{ booking.brand_name|title|urlencode }}%20Products">9987223322</a><br>
+Visit: www.klickit.co.in <br>
+Thank you for choosing us!
+</div>
+
+</div>
+</body>
+</html>

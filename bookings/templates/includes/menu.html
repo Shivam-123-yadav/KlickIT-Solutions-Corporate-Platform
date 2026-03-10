@@ -1,0 +1,87 @@
+<!-- Top Bar -->
+<div class="topbar" id="home">
+  <div class="container d-flex justify-content-between">
+    <span style="display: flex; gap:10px;">
+      <span class="d-none d-md-block"><i class="bi bi-clock"></i> Mon - Sat : 10.00 - 19.00</span>
+      &nbsp;
+      <i class="bi bi-envelope"></i>
+      <a href="mailto:info@klickit.co.in">info@klickit.co.in</a>
+      &nbsp;
+      <i class="bi bi-telephone"></i>
+      <a href="tel:02242939300">022 42939300</a>
+    </span>
+    <div class="d-none d-md-block">
+      <a href="https://www.facebook.com/klickitsolutions/" class="text-white me-3" target="_blank">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/klickitsolutions/" class="text-white me-3" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.google.com/search?sca_esv=994d78f707649ee8&rlz=1C5CHFA_enIN929IN929&sxsrf=AE3TifOnhph1X3tLM_xhelinkBTtAJU1_g:1758013243010&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E22gbqqPpwAQMw8g6vUTzxPzizCEo5NeG2eTL0mXTiuassyILNGmerXo-b6xDfIjYhgS1GZC4nlSLumAAW8_YsCbEdkz69J1mYmj8A0QHZ5RHnlsLg%3D%3D&q=KlickIT+Solutions+%26+Services+Reviews&sa=X&ved=2ahUKEwjPvfDW9dyPAxWsbvUHHapAFbgQ0bkNegQILBAE&biw=1920&bih=967&dpr=1" class="text-white" target="_blank">
+        <i class="bi bi-google"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-nav">
+  <div class="container">
+    <a class="navbar-brand" href="https://thirdpartyboseservice.com/">
+      {% load static %}
+      <img src="{% static 'images/klickit-logo.webp' %}" alt="Klick IT Solutions & Services" title="Klick IT Solutions & Services">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#whatwedo">What We Do</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#service">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#workprocess">Work Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#brands">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://klickit.co.in/#contact">Contact</a></li>
+        <li>
+          <a class="getstarted scrollto pulse" href="https://klickit.co.in/book-now" 
+             data-sound="{% static 'images/sounds/ding-sound.mp3' %}">
+            Book Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  /* menu for mobile view jump to proper section*/
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+
+        // detect navbar height dynamically
+        const navbar = document.querySelector('.navbar');
+        const headerOffset = navbar ? navbar.offsetHeight : 0;
+
+        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+
+        // close navbar after scroll (only if open in mobile)
+        let navbarToggler = document.querySelector('.navbar-toggler');
+        let navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      });
+    });
+  });
+</script>

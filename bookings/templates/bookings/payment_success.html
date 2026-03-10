@@ -1,0 +1,137 @@
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="payment-success-container">
+    
+    <!-- Success Icon -->
+    <div class="text-center mb-4">
+        <div class="success-check">
+            <i class="bi bi-check-lg"></i>
+        </div>
+        <h2 class="text-success fw-bold mt-3">Payment Successful!</h2>
+        <p class="text-muted">Your booking has been confirmed</p>
+    </div>
+
+    <!-- Card -->
+    <div class="card shadow-lg border-0 rounded-4 mb-4">
+        <div class="card-body p-4">
+
+            <h4 class="fw-semibold text-dark mb-3">Booking Summary</h4>
+
+            {% if booking %}
+            <div class="table-responsive">
+                <table class="table table-borderless align-middle">
+                    <tbody>
+                        <tr>
+                            <td><strong>Amount Paid</strong></td>
+                            <td class="text-end text-success fw-bold fs-5">₹{{ booking.total_charges }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Device</strong></td>
+                            <td class="text-end">{{ booking.device_service }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Service Center</strong></td>
+                            <td class="text-end">{{ booking.service_center_name }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Booking Date</strong></td>
+                            <td class="text-end">{{ booking.booking_date }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time Slot</strong></td>
+                            <td class="text-end">{{ booking.select_time_slot }}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transaction ID</strong></td>
+                            <td class="text-end">
+                                <span class="txn-box">{{ transaction_id }}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment Method</strong></td>
+                            <td class="text-end">
+                                {{ payment_method|default:booking.payment_method|default:"N/A" }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Notification Section -->
+    <div class="alert alert-success d-flex flex-column shadow-sm rounded-4 p-3 mb-4">
+        <span>📧 Confirmation email sent to <strong>{{ booking.customer_email }}</strong></span>
+        <span>💬 WhatsApp confirmation sent to <strong>{{ booking.customer_mobile }}</strong></span>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-3 mb-5">
+        <p class="text-muted small">Our team will contact you shortly for pickup confirmation.</p>
+
+        <a href="/" class="btn btn-success btn-lg px-5 rounded-pill shadow-sm">
+            Return to Home
+        </a>
+    </div>
+</div>
+
+
+<!-- Custom Styles -->
+<style>
+.payment-success-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+    animation: fadeIn .6s ease-in-out;
+}
+
+.success-check {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #e9fbee;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.txn-box {
+    background: #f2f4f5;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.card {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Optimize */
+@media (max-width: 600px) {
+    .success-check {
+        width: 70px;
+        height: 70px;
+        font-size: 45px;
+    }
+    .payment-success-container {
+        margin: 20px 10px;
+    }
+}
+</style>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+{% endblock %}

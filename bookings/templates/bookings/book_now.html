@@ -1,0 +1,2476 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Book Laptop & Computer Repair Service Online | KlickIT Solutions Mumbai</title>
+
+<meta name="description" content="Book your laptop or computer repair service online with KlickIT Solutions & Services. We provide expert repair for Dell, HP, Asus, Acer, Lenovo, Apple & Bose in Mumbai. Fast, and reliable repair center booking." />
+
+<meta name="keywords" content="Book Laptop Repair Mumbai, Online Computer Repair Booking, Dell Laptop Service Booking, HP Laptop Repair Appointment, Lenovo Repair Service Mumbai, Asus Laptop Repair Booking, Acer Service Center Book Online, Apple Laptop Service, Bose Service Center Booking" />
+
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://thirdpartyboseservice.com/book-now" />
+<!-- Open Graph / Facebook -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book Laptop & Computer Repair Service Online | KlickIT Solutions Mumbai">
+<meta property="og:description" content="Book your Dell, HP, Asus, Acer, Lenovo, Apple & Bose repair service online at KlickIT Solutions Mumbai. Trusted laptop & computer service center with fast support.">
+<meta property="og:url" content="https://thirdpartyboseservice.com/book-now">
+<meta property="og:site_name" content="KlickIT Solutions & Services">
+<meta property="og:image" content="https://thirdpartyboseservice.com/images/og-image.webp">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book Laptop & Computer Repair Service Online | KlickIT Solutions Mumbai">
+<meta name="twitter:description" content="Easily book Dell, HP, Asus, Acer, Lenovo, Apple & Bose repair service online with KlickIT Solutions Mumbai. Repair & quick booking.">
+<meta name="twitter:image" content="https://thirdpartyboseservice.com/images/og-image.webp">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/klickit-favicon.webp' %}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "KlickIT Solutions & Services",
+  "image": "https://thirdpartyboseservice.com/images/og-image.webp",
+  "@id": "https://thirdpartyboseservice.com/",
+  "url": "https://thirdpartyboseservice.com/",
+  "telephone": "+022-42939300",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "505, 5th Floor, Morya Landmark 1, Off Link Road, Andheri West",
+    "addressLocality": "Andheri West",
+    "addressRegion": "Maharashtra",
+    "postalCode": "400053",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "20:00"
+    }
+  ],
+  "department": [
+    {
+      "@type": "Service",
+      "name": "Dell Laptop Repair",
+      "serviceType": "Dell Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "HP Laptop Repair",
+      "serviceType": "HP Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "Asus Laptop Repair",
+      "serviceType": "Asus Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "Acer Laptop Repair",
+      "serviceType": "Acer Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "Lenovo Laptop Repair",
+      "serviceType": "Lenovo Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "Apple Laptop Repair",
+      "serviceType": "Apple Service Center"
+    },
+    {
+      "@type": "Service",
+      "name": "Bose Service Center",
+      "serviceType": "Bose Speaker & Headphone Repair"
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<style>
+/* Your existing CSS styles remain unchanged */
+#booknow {
+    position: relative;
+    padding: 40px 0 40px 0px;
+    background: #fff;
+}
+#booknow .bokwrap {
+    padding: 0px 0px 0px 0px;
+}
+#booknow .bokwrap .section-title {
+  text-align: center;
+  padding-bottom: 5px;
+}
+#booknow .bokwrap .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--darkblue);
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  position: relative;
+}
+#booknow .bokwrap .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 9px;
+  background-image: url("/static/images/icon-screw.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation: float 3s ease-in-out infinite;
+}
+#booknow .bokwrap .card {
+    border: solid 1px #ccc;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(225deg, rgb(53, 73, 168) 3%, rgb(232, 236, 255) 3%, rgb(255, 255, 255) 97%, rgb(5, 20, 88) 97%);
+    box-shadow: 0 5px 12px rgb(101 106 189 / 28%);
+}
+#booknow .bokwrap .card h4 {
+    padding: 15px;
+    background: var(--darkblue);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    margin: 0 auto;
+    top: -50px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#booknow .bokwrap .form-step h5 {
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-bottom: dashed 1px #0076ce;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+#booknow .bokwrap .form-step .form-label {
+    font-weight: 500;
+    color: #333;
+}
+#booknow .bokwrap .form-step .form-select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #111;
+    background-color: #c4cdf9;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #0076ce;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-left: 3px solid #808cca;
+}
+#booknow .bokwrap .form-step .form-select:focus {
+    background-color: #fff;
+    border-color: #c4cdf9;
+    color: #111;
+    outline: 0;
+    box-shadow: 0 0 0 0.125rem rgb(0 118 206 / 31%);
+}
+#booknow .bokwrap .form-step .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #111;
+    background-color: #c4cdf9;
+    background-clip: padding-box;
+    border: 1px solid #808cca;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    border-left: 3px solid #808cca; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#booknow .bokwrap .form-step .form-control:focus {
+    background-color: #fff;
+    border-color: #808cca;
+    outline: 0;
+    box-shadow: 0 0 0 0.125rem rgb(93 104 157 / 31%);
+}
+#booknow .bokwrap .btn-custom {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    border-color: #808cca;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    width: 125px;
+    transition: all 1s ease-in-out;
+}
+#booknow .bokwrap .customsubmit {
+    background: var(--darkblue);
+}
+#booknow .bokwrap .btn-custom:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+#booknow .bokwrap .icon-container {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    padding: 0px 0px;
+}
+#booknow .bokwrap .icon-btn {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #051458;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+#booknow .bokwrap .model-select {
+    display: none;
+}
+#booknow .bokwrap .icon-btn img {
+    width: 80px;
+    padding: 10px;
+    filter: grayscale(1);
+}
+#booknow .bokwrap .icon-btn:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+#booknow .bokwrap .icon-btn.active1 {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .icon-btn:hover img {
+    filter: brightness(100);
+}
+#booknow .bokwrap .icon-btn.active1 img {
+    filter: brightness(100);
+}
+#booknow .bokwrap .time-slot-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+#booknow .bokwrap .time-slot {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 10px;
+    border: 1px dotted #808cca;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+#booknow .bokwrap .time-slot input[type="radio"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #0d6efd;
+}
+#booknow .bokwrap .time-slot {
+    background-color: #c4cdf9;
+    color: #000;
+    border: 1px solid #808cca;
+}
+#booknow .bokwrap .time-slot:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+#booknow .bokwrap .time-slot.active {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .time-slot.active input[type="radio"]::before {
+    content: "✔";
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+}
+#booknow .bokwrap .time-slot:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgb(48 134 198 / 64%);
+}
+#booknow .bokwrap .time-slot.disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+#booknow .bokwrap .time-slot.disabled:hover {
+    transform: none;
+    box-shadow: none;
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+#booknow .bokwrap .selectservice-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+#booknow .bokwrap .slotservice {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px;
+    border: 1px dotted #0076ce;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+#booknow .bokwrap .slotservice input[type="radio"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #0d6efd;
+}
+#booknow .bokwrap .slotservice {
+    background-color: #c4cdf9;
+    color: #000;
+    border: 1px solid #808cca;
+}
+#booknow .bokwrap .slotservice:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+#booknow .bokwrap .slotservice.active {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .slotservice.active input[type="radio"]::before {
+    content: "✔";
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+}
+#booknow .bokwrap .slotservice:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 7px rgba(184, 223, 252, 1);
+}
+#booknow .bokwrap .slotservice {
+    width: 120px;
+}
+#booknow .bokwrap .slotservice:hover {
+    width: 130px;
+}
+#booknow .bokwrap .slotservice.active {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .servicetype-main {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    flex-wrap: nowrap;
+}
+#booknow .bokwrap .servicetype {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    background-color: #c4cdf9;
+    color: #000;
+    border: 1px solid #808cca;
+}
+#booknow .bokwrap .servicetype input[type="radio"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: #0d6efd;
+}
+#booknow .bokwrap .servicetype:hover {
+    background-color: var(--blue);
+    box-shadow: 0 4px 7px rgba(184, 223, 252, 1);
+    color: #fff;
+}
+#booknow .bokwrap .servicetype.active {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .servicetype.active input[type="radio"]::before {
+    content: "✔";
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+}
+#booknow .bokwrap .servicetype:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 7px rgba(184, 223, 252, 1);
+}
+#booknow .bokwrap .servicetype {
+    width: 50%;
+}
+#booknow .bokwrap .servicetype.active {
+    background-color: var(--darkblue);
+    color: #fff;
+}
+#booknow .bokwrap .service-content {
+    display: none;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(206, 212, 218, 0.5);
+}
+#booknow .bokwrap .service-content.active {
+    display: block;
+}
+#booknow .bokwrap .service-content .tablediv {
+    box-shadow: 0 4px 10px rgb(5, 20, 88);
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px;
+}
+#booknow .bokwrap .service-content .tablediv table tr, #booknow .bokwrap .service-content .tablediv table td, #booknow .bokwrap .service-content .tablediv table, #booknow .bokwrap .service-content .tablediv table th {
+    border: solid #0076ce 1px;
+}
+#booknow .bokwrap .service-content .tablediv table thead {
+    background: #c7e1f4 !important;
+    font-size: .9rem;
+}
+#booknow .bokwrap .service-content .tablediv table thead th {
+    border-bottom: 2px solid #0076ce;
+}
+#booknow .bokwrap .service-content .tablediv table tr {
+    font-weight: 500;
+}
+#booknow .bokwrap .service-content .tablediv table .tfoot {
+    background: linear-gradient(269deg, rgb(0 118 206) 23%, rgb(23 135 216) 86%);
+    color: #fff;
+}
+#booknow .bokwrap .pulse {
+    animation: pulseGlow 1.5s infinite;
+}
+@keyframes pulseGlow {
+0% {
+transform: scale(1);
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+opacity: 1;
+}
+50% {
+transform: scale(1.1);
+box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 0.8);
+opacity: 0.8;
+}
+100% {
+transform: scale(1);
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+opacity: 1;
+}
+}
+.errorshow {
+    color: red;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: -16px;
+}
+.errorshowonline {
+    color: red;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: -21px;
+    margin-top: -3px !important;
+}
+.mobpd0 {
+    padding: 0px;
+}
+#loader_animations {
+    display: none;
+}
+.form-stepnew {
+    display: none;
+}
+.form-stepnew.activenew {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #1093f4 94%, #0000) top / 9px 9px no-repeat, conic-gradient(#0000 30%, #0067b2);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+    left: 304px;
+    margin: 0 auto;
+}
+@keyframes spinner-c7wet2 {
+100% {
+transform: rotate(1turn);
+}
+}
+@media (max-width: 500px){
+#booknow .bokwrap h2 {
+    font-size: 1.5rem;}
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar Start -->
+<?php include 'includes/menu.php'; ?>
+
+<!-- Navbar End --> 
+
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-1 page-header contact-banner">
+  <div class="container py-5 mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 class="display-3 text-white animated slideInDown">BOOK NOW</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header End --> 
+
+<main id="main">
+  <section id="booknow">
+    <div class="container">
+      <div class="bokwrap">
+        <div class="row">
+          <div class="section-title" data-aos="fade-up">
+            <h2 class="">Book Appointment</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-2 mb-3">
+            <div class="container my-5 mobpd0">
+              <div class="card p-4">
+                <h4 class="text-center mb-1"> <i class="bi bi-calendar2-check"></i> &nbsp; Book Your Service</h4>
+                <div id="form-sections"> 
+                  <!-- Step 1 -->
+                  <div class="form-step form-stepnew activenew">
+                    <h5 class="mb-3">Step 1: Device Information</h5>
+                    <label for="device-problem" class="form-label">Select your device </label>
+                    <div class="icon-container mb-3">
+                        <input type="hidden" name="device_name" id="device_name">
+                      <div class="icon-btn" data-value="laptop" onclick="selectDevice(this)"> <img src="{% static 'images/icons/laptop.png' %}" alt="" class="img-fluid"> Laptop</div>
+                      <div class="icon-btn" data-value="desktop" onclick="selectDevice(this)"> <img src="{% static 'images/icons/desktop.png' %}" alt="" class="img-fluid"> Desktop</div>
+                      <div class="icon-btn" data-value="allinone" onclick="selectDevice(this)"><img src="{% static 'images/icons/all-in-one.png' %}" alt="" class="img-fluid"> All in One </div>
+                      <div id="ipad-device" class="icon-btn" data-value="ipad" onclick="selectDevice(this)"><img src="{% static 'images/icons/ipad.png' %}" alt="" class="img-fluid"> iPad </div>
+                    </div>
+                    <span id="device_error" class="errorshow"></span>
+                    
+                    {% if not preselected_brand %}
+                    <div class="mb-3">
+                      <label for="brand-name" class="form-label">Select your Brand</label>
+                      <select class="form-select" id="brand-name" name="brand_name">
+                        <option selected disabled>Select Brand</option>
+                      </select>
+                      <span id="brand_error" class="errorshow" style="color: red; margin-top:0px "></span>
+                    </div>
+                    {% else %}
+                    <input type="hidden" id="brand-name" name="brand_name" value="{{ preselected_brand|title }}">
+                    {% endif %}
+                    
+                    <div class="mb-3">
+                      <div id="laptop-model" class="model-select">
+                        <label for="laptop-model-name" class="form-label">Select Your Model</label>
+                        <select class="form-select" id="laptop-model-name" name="laptop_model_name">
+                          <option selected disabled>Select Model</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div id="desktop-model" class="model-select">
+                        <label for="desktop-model-name" class="form-label">Select Your Model</label>
+                        <select class="form-select" id="desktop-model-name" name="desktop_model_name">
+                          <option selected disabled>Select Model</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div id="allinone-model" class="model-select">
+                        <label for="allinone-model-name" class="form-label">Select Your Model</label>
+                        <select class="form-select" id="allinone-model-name" name="all_in_one">
+                          <option selected disabled>Select Model</option>
+                        </select>
+                      </div>
+                    </div>
+                    <span id="model_name_error" class="errorshow"></span>
+                    
+                    <div class="mb-3">
+                      <label for="device-problem" class="form-label">Select your device problem</label>
+                      <select class="form-select" id="device-problem" name="device_problems">
+                        <option selected disabled>Select Problem</option>
+                        <option>Battery Issue</option>
+                        <option>Screen Damage</option>
+                        <option>Keyboard Malfunction</option>
+                        <option>Overheating</option>
+                        <option>Data Recovery</option>
+                        <option>Motherboard Issue</option>
+                        <option>Booting Problem</option>
+                        <option>Hinge Issue</option>
+                        <option>Body Cover Change</option>
+                        <option>Liquid/Water Spill</option>
+                        <option>Touch Pad Issue</option>
+                        <option>HDD Issue</option>
+                        <option>Operating System Issue</option>
+                        <option>Mic/Speaker Issue</option>
+                        <option>Charging Problem</option>
+                        <option>Display Issue</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span id="device_problem_error" class="errorshow"></span>
+                    
+                    <div class="mb-3">
+                      <label for="serial-number" class="form-label">Serial Number (Optional)</label>
+                      <input type="text" class="form-control" id="serial-number" name="serial_number">
+                    </div>
+                    <div class="mb-3">
+                      <label for="issue" class="form-label">Write Issue</label>
+                      <textarea class="form-control" id="issue" rows="3" name="write_issue"></textarea>
+                    </div>
+                    <span id="write_issue_error" class="errorshow"></span>
+                    <button class="btn btn-custom mt-4" onclick="nextStep()" style="display: flex; justify-content: center; align-items: center; margin: 0 auto;" name="first_stage">NEXT →</button>
+                  </div>
+                  <!-- Step 2 -->
+                  <div class="form-step form-stepnew">
+                    <h5 class="mb-3">Step 2: Personal Information</h5>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" name="customer_name" id="name" placeholder="Enter your name">
+                    </div>
+                    <span id="customer_name_error" class="errorshow"></span>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" name="customer_email" id="email" placeholder="Enter your email">
+                    </div>
+                    <span id="customer_email_error" class="errorshow"></span>
+                    <div class="mb-3">
+                      <label for="mobile" class="form-label">Mobile</label>
+                      <input type="tel" class="form-control" name="customer_mobile_number" id="mobile" placeholder="Enter your mobile number">
+                    </div>
+                    <span id="customer_mobile_number_error" class="errorshow"></span>
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Address</label>
+                      <textarea class="form-control" name="customer_address_home" id="address" rows="3" placeholder="Enter your address"></textarea>
+                    </div>
+                    <span id="customer_address_error" class="errorshow"></span>
+                    <div class="d-flex justify-content-center gap-2">
+                      <button class="btn btn-custom" onclick="prevStep()">← PREV</button>
+                      <button class="btn btn-custom" name="second_stage">NEXT →</button>
+                    </div>
+                  </div>
+                  <!-- Step 3 -->
+                  <div class="form-step form-stepnew">
+                    <h5 class="mb-3">Step 3: Service Details</h5>
+                    <div class="mb-3">
+                      <label for="service-center" class="form-label">Select Service Center</label>
+                      <div class="d-flex gap-2 selectservice-main"> 
+                        <label class="slotservice">
+                          <input type="radio" name="slotservice" onclick="selectSlotservice(this)">
+                          <span>Andheri</span> </label>
+                        <label class="slotservice">
+                          <input type="radio" name="slotservice" onclick="selectSlotservice(this)">
+                          <span>Thane</span> </label>
+                        <label class="slotservice">
+                          <input type="radio" name="slotservice" onclick="selectSlotservice(this)">
+                          <span>Dadar</span> </label>
+                      </div>
+                    </div>
+                    <span id="slotservice_error" class="errorshow"></span>
+                    <div class="mb-3">
+                      <div class="service-center">
+                        <label for="service-center" class="form-label">Select Service Type</label>
+                        <div class="d-flex gap-2 servicetype-main"> 
+                          <label class="servicetype">
+                            <input type="radio" id="visit_service_center" name="servicetype" data-center="offsite" onclick="selectServicetype(this)">
+                            <span>Visit Service Center</span> </label>
+                          <label class="servicetype">
+                            <input type="radio" id="onsite_visit_service" name="servicetype" data-center="onsite" onclick="selectServicetype(this)">
+                            <!--<span>Onsite - Service Charges</span> -->
+                            <span>Pickup & Drop - Service Charges</span> 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <span id="service_type_error" class="errorshow"></span> 
+                    <div id="offsite" class="service-content">
+                      <div class="mb-3">
+                        <label for="booking-date" class="form-label">Select Booking Date</label>
+                        <div class="input-group">
+                          <input type="date" class="form-control" id="booking-date" name="booking_date">
+                        </div>
+                      </div>
+                      <span id="booking_date_error" class="errorshow"></span>
+                      <div class="mb-3">
+                        <label class="form-label">Select Time Slot</label>
+                        <div class="gap-2 time-slot-main" id="offsite-time-slots"> 
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="10:00 AM - 11:00 AM" onclick="selectSlot(this)">
+                            <span>10:00 AM - 11:00 AM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="11:00 AM - 12:00 PM" onclick="selectSlot(this)">
+                            <span>11:00 AM - 12:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="12:00 PM - 01:00 PM" onclick="selectSlot(this)">
+                            <span>12:00 PM - 01:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="01:00 PM - 02:00 PM" onclick="selectSlot(this)">
+                            <span>01:00 PM - 02:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="02:00 PM - 03:00 PM" onclick="selectSlot(this)">
+                            <span>02:00 PM - 03:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="03:00 PM - 04:00 PM" onclick="selectSlot(this)">
+                            <span>03:00 PM - 04:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="04:00 PM - 05:00 PM" onclick="selectSlot(this)">
+                            <span>04:00 PM - 05:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="05:00 PM - 06:00 PM" onclick="selectSlot(this)">
+                            <span>05:00 PM - 06:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot" value="06:00 PM - 07:00 PM" onclick="selectSlot(this)">
+                            <span>06:00 PM - 07:00 PM</span> </label>
+                        </div>
+                      </div>
+                      <span id="time_slot_error" class="errorshow"></span> </div>
+                    <div id="onsite" class="service-content">
+                      <div class="mb-3 tablediv">
+                        <table class="table table-bordered mt-3">
+                          <thead>
+                            <tr class="">
+                              <th valign="middle" align="left">SERVICE</th>
+                              <th valign="middle" align="left">CHARGES (₹)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="">
+                              <td valign="middle" align="left">Pickup & Drop Charges</td>
+                              <td valign="middle" align="left" id="pick_up_drop_charge"></td>
+                            </tr>
+                            <tr class="">
+                              <td valign="middle" align="left">Diagnostic Charges</td>
+                              <td valign="middle" align="left" id="diagnostic_charges"></td>
+                            </tr>
+                            <tr class="tfoot">
+                              <th valign="middle" align="left">TOTAL CHARGES</th>
+                              <th valign="middle" align="left" id="total_charges"></th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-3">
+                        <label for="booking-date-onsite" class="form-label">Select Booking Date</label>
+                        <div class="input-group">
+                          <input type="date" class="form-control" id="booking-date-onsite" name="booking_date_onsite">
+                        </div>
+                      </div>
+                      <span id="onsite_booking_date_error" class="errorshow"></span>
+                      <div class="mb-3">
+                        <label class="form-label">Select Time Slot</label>
+                        <div class="gap-2 time-slot-main" id="onsite-time-slots"> 
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot-onsite" value="10:00 AM - 12:00 PM" onclick="selectSlot(this)">
+                            <span>10:00 AM - 12:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot-onsite" value="12:00 PM - 02:00 PM" onclick="selectSlot(this)">
+                            <span>12:00 PM - 02:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot-onsite" value="02:00 PM - 04:00 PM" onclick="selectSlot(this)">
+                            <span>02:00 PM - 04:00 PM</span> </label>
+                          <label class="time-slot">
+                            <input type="radio" name="time-slot-onsite" value="04:00 PM - 06:00 PM" onclick="selectSlot(this)">
+                            <span>04:00 PM - 06:00 PM</span> </label>
+                        </div>
+                        <span id="time_slot_error_onsite" class="errorshowonline"></span> </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-2"> <img src="{% static 'images/loader1.gif' %}" width="50" height="50" id="loader_animations">
+                      <button class="btn btn-custom" onclick="prevStep()">← PREV</button>
+                      <button class="btn btn-custom customsubmit" name="visit_service_data">SUBMIT
+                      <div class="spinner" id="offsite_spinner" style="display:none;"></div>
+                      </button>
+                      <span id="message-container" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 1.2rem; font-weight: 600; background: rgb(72, 14, 191); padding: 20px 40px; border-radius: 8px; z-index: 9999; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);"></span>
+                      <button class="btn btn-custom customsubmit paynow" name="onsite_visit_service" style="display: none;">PAY NOW
+                      <div class="spinner" id="onsite_spinner" style="display:none;"></div>
+                      </button>
+                      <div id="onsite_success_message" style="position: absolute;bottom: 88px;color: #fff;font-size: 1rem;font-weight: 500; background: rgb(52 179 9); padding: 1px 15px;border-radius: 0px;"></div>     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+<script>  
+// CSRF Token Function
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+// Preselected brand from URL
+const preselectedBrand = "{{ preselected_brand|default:'' }}";
+
+// Brand normalization function
+function normalizeBrand(brand) {
+    if (!brand) return '';
+    
+    // Special case for HP - keep it uppercase
+    if (brand.toLowerCase() === 'hp') {
+        return 'HP';
+    }
+
+    // Convert to proper case
+    return brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
+}
+
+// Enhanced Time Slot Management Functions
+function disablePastTimeSlots(dateInput, timeSlotContainer, serviceType) {
+    const selectedDate = new Date(dateInput.value);
+    const today = new Date();
+    
+    // Reset all time slots first
+    $(timeSlotContainer).find('.time-slot').each(function() {
+        $(this).removeClass('disabled');
+        $(this).find('input').prop('disabled', false);
+        $(this).css('opacity', '1');
+    });
+    
+    // If selected date is today, disable past time slots
+    if (selectedDate.toDateString() === today.toDateString()) {
+        const currentTime = today.getHours() * 60 + today.getMinutes(); // Current time in minutes
+        
+        $(timeSlotContainer).find('.time-slot').each(function() {
+            const timeText = $(this).find('span').text();
+            const slotStartTime = getTimeInMinutes(timeText.split(' - ')[0]);
+            
+            // Disable slots that have already passed
+            if (slotStartTime < currentTime) {
+                $(this).addClass('disabled');
+                $(this).find('input').prop('disabled', true);
+                $(this).css('opacity', '0.5');
+            }
+        });
+    }
+}
+
+function getTimeInMinutes(timeStr) {
+    const [time, modifier] = timeStr.split(' ');
+    let [hours, minutes] = time.split(':').map(Number);
+    
+    if (modifier === 'PM' && hours !== 12) hours += 12;
+    if (modifier === 'AM' && hours === 12) hours = 0;
+    
+    return hours * 60 + minutes;
+}
+
+function updateTimeSlotAvailability(selectedDate, timeSlotContainer, existingBookings, serviceType, selectedServiceCenter) {
+    const maxSlots = serviceType === 'onsite' ? 1 : 2;
+    const today = new Date();
+    const isToday = selectedDate.toDateString() === today.toDateString();
+    
+    console.log('=== Updating Time Slots ===');
+    console.log('Service Type:', serviceType, '| Max Slots:', maxSlots);
+    console.log('Selected Service Center:', selectedServiceCenter);
+    console.log('Is Today:', isToday);
+    console.log('Existing Bookings:', existingBookings);
+    
+    // Reset all time slots first
+    $(timeSlotContainer).find('.time-slot').each(function() {
+        $(this).removeClass('disabled');
+        $(this).find('input').prop('disabled', false);
+        $(this).css('opacity', '1');
+    });
+    
+    // STEP 1: Disable past time slots for today
+    if (isToday) {
+        const currentTime = today.getHours() * 60 + today.getMinutes();
+        console.log('Current Time (minutes):', currentTime);
+        
+        $(timeSlotContainer).find('.time-slot').each(function() {
+            const timeText = $(this).find('span').text();
+            const slotStartTime = getTimeInMinutes(timeText.split(' - ')[0]);
+            
+            if (slotStartTime <= currentTime) {
+                console.log('⏰ Disabling past slot:', timeText);
+                $(this).addClass('disabled');
+                $(this).find('input').prop('disabled', true);
+                $(this).css('opacity', '0.5');
+            }
+        });
+    }
+    
+    // STEP 2: Disable slots based on booking count for selected service center
+    if (!selectedServiceCenter) {
+        console.log('⚠️ No service center selected - skipping booking check');
+        return;
+    }
+    
+    if (existingBookings && existingBookings.length > 0) {
+        const dateStr = selectedDate.toISOString().split('T')[0];
+        console.log('Checking bookings for date:', dateStr);
+        
+        existingBookings.forEach(booking => {
+            console.log('Processing booking:', booking);
+            
+            // Match both date AND service center
+            if (booking.date === dateStr && 
+                booking.service_center === selectedServiceCenter) {
+                
+                const bookingCount = parseInt(booking.count) || 0;
+                console.log(`📊 Slot: ${booking.time_slot}, Center: ${booking.service_center}, Count: ${bookingCount}/${maxSlots}`);
+                
+                // Disable if booking limit reached
+                if (bookingCount >= maxSlots) {
+                    $(timeSlotContainer).find('.time-slot').each(function() {
+                        const timeText = $(this).find('span').text().trim();
+                        if (timeText === booking.time_slot) {
+                            console.log('🚫 DISABLING FULL SLOT:', booking.time_slot, `(${bookingCount}/${maxSlots} bookings)`);
+                            $(this).addClass('disabled');
+                            $(this).find('input').prop('disabled', true);
+                            $(this).css('opacity', '0.5');
+                        }
+                    });
+                } else {
+                    console.log('✅ Slot still available:', booking.time_slot, `(${bookingCount}/${maxSlots} bookings)`);
+                }
+            } else {
+                if (booking.date !== dateStr) {
+                    console.log('⏭️ Skipping different date:', booking.date);
+                } else if (booking.service_center !== selectedServiceCenter) {
+                    console.log('⏭️ Skipping different center:', booking.service_center, '!==', selectedServiceCenter);
+                }
+            }
+        });
+    } else {
+        console.log('ℹ️ No existing bookings found');
+    }
+    
+    console.log('=== Time Slot Update Complete ===\n');
+}
+
+// Onsite Booking Handler - FIXED VERSION
+// Onsite Booking Handler - UPDATED WITH BRAND FIX
+$("button[name='onsite_visit_service']").on('click', function(e) {
+    e.preventDefault();
+
+    // Collect basic form data
+    let device_name = $("input[name='device_name']").val() || '';
+    let device_problems = $("select[name='device_problems']").val() || '';
+    
+    // FIXED: Get and normalize brand_name
+    let brand_name = '';
+    if (preselectedBrand) {
+        brand_name = normalizeBrand(preselectedBrand);
+    } else {
+        brand_name = $("select[name='brand_name']").val() || '';
+        brand_name = normalizeBrand(brand_name);
+    }
+    
+    let serial_number = $("input[name='serial_number']").val() || '';
+    let write_issue = $("textarea[name='write_issue']").val() || '';
+
+    let customer_name = $("#name").val() || '';
+    let customer_email = $("#email").val() || '';
+    let customer_mobile_number = $("#mobile").val() || '';
+    let customer_address_home = $("#address").val() || '';
+
+    let selected_slotservice = $("input[name='slotservice']:checked").next("span").text() || '';
+    let service_types = $("#onsite_visit_service:checked").next("span").text() || '';
+    let booking_date = $("input[name='booking_date_onsite']").val() || '';
+    let time_slots = $("input[name='time-slot-onsite']:checked").val() || '';
+
+    // Determine selected model_name based on device
+    let model_name = '';
+    let deviceType = '';
+    if(device_name === 'laptop') {
+        model_name = $("#laptop-model-name").val() || '';
+        deviceType = 'laptop';
+    } else if(device_name === 'desktop') {
+        model_name = $("#desktop-model-name").val() || '';
+        deviceType = 'desktop';
+    } else if(device_name === 'allinone') {
+        model_name = $("#allinone-model-name").val() || '';
+        deviceType = 'allinone';
+    } else if(device_name === 'ipad') {
+        model_name = 'iPad'; 
+        deviceType = 'allinone'; // iPad uses allinone category
+    }
+
+    // DEBUG: Log all values
+    console.log('🔍 DEBUG Onsite Booking Data:');
+    console.log('device_name:', device_name);
+    console.log('brand_name (raw):', $("select[name='brand_name']").val() || $("input[name='brand_name']").val());
+    console.log('brand_name (normalized):', brand_name);
+    console.log('model_name:', model_name);
+    console.log('deviceType:', deviceType);
+    console.log('selected_slotservice:', selected_slotservice);
+    console.log('booking_date:', booking_date);
+    console.log('time_slots:', time_slots);
+
+    // Fetch pricing from brandModels - IMPROVED VERSION
+    let pricing = null;
+    let pick_up_drop_charge = 0;
+    let diagnostic_charges = 0;
+    let total_amount = 0;
+    
+    // Check if all required fields are present
+    if (brand_name && deviceType && model_name) {
+        // Debug: Check what's available in brandModels
+        console.log('🔍 Checking brandModels for:', {
+            brand_name,
+            deviceType,
+            model_name,
+            brandExists: !!brandModels[brand_name],
+            deviceTypeExists: brandModels[brand_name] ? !!brandModels[brand_name][deviceType] : false,
+            modelExists: brandModels[brand_name] && brandModels[brand_name][deviceType] ? 
+                        !!brandModels[brand_name][deviceType].pricing[model_name] : false
+        });
+        
+        // Try case-insensitive lookup for brand
+        let foundBrand = brand_name;
+        if (!brandModels[brand_name]) {
+            // Try to find the brand with case-insensitive match
+            const brands = Object.keys(brandModels);
+            for (let b of brands) {
+                if (b.toLowerCase() === brand_name.toLowerCase()) {
+                    foundBrand = b;
+                    console.log(`🔄 Found brand with case match: ${brand_name} -> ${foundBrand}`);
+                    break;
+                }
+            }
+        }
+        
+        if (brandModels[foundBrand] && 
+            brandModels[foundBrand][deviceType] && 
+            brandModels[foundBrand][deviceType].pricing && 
+            brandModels[foundBrand][deviceType].pricing[model_name]) {
+            
+            pricing = brandModels[foundBrand][deviceType].pricing[model_name];
+            
+            console.log('✅ Pricing found:', pricing);
+            
+            // Parse amounts
+            pick_up_drop_charge = parseFloat(pricing.pick_up_drop_charge.replace(/[^0-9.]/g, "") || 0);
+            diagnostic_charges = parseFloat(pricing.diagnostic_charges.replace(/[^0-9.]/g, "") || 0);
+            total_amount = parseFloat(pricing.total_charges.replace(/[^0-9.]/g, "") || 0);
+            
+            console.log('💰 Parsed amounts:', {pick_up_drop_charge, diagnostic_charges, total_amount});
+            
+            // Update the display with pricing
+            $("#diagnostic_charges").text(pricing.diagnostic_charges);
+            $("#pick_up_drop_charge").text(pricing.pick_up_drop_charge);
+            $("#total_charges").text(pricing.total_charges);
+            
+        } else {
+            console.error('❌ Pricing not found for:', {foundBrand, deviceType, model_name});
+            console.log('Available brands:', Object.keys(brandModels));
+            if (brandModels[foundBrand]) {
+                console.log('Available device types for', foundBrand, ':', Object.keys(brandModels[foundBrand]));
+                if (brandModels[foundBrand][deviceType]) {
+                    console.log('Available models for', deviceType, ':', Object.keys(brandModels[foundBrand][deviceType].pricing || {}));
+                }
+            }
+        }
+    } else {
+        console.error('❌ Missing required fields:', {brand_name, deviceType, model_name});
+    }
+
+    // Rest of the code remains the same...
+    // [Continue with validation and AJAX submission]
+
+    let website_url = window.location.href;
+
+    // CLIENT-SIDE VALIDATION
+    let hasErrors = false;
+    $("#customer_name_error, #customer_email_error, #customer_mobile_number_error, #device_problem_error, #model_name_error, #slotservice_error, #onsite_booking_date_error, #time_slot_error_onsite, #service_type_error").text('');
+    $("#onsite_success_message").text('').hide();
+
+    if (!customer_name || customer_name.trim().length < 2) {
+        $("#customer_name_error").text('Name is required').css('color','red'); hasErrors = true;
+    }
+    if (!customer_email) {
+        $("#customer_email_error").text('Email is required').css('color','red'); hasErrors = true;
+    } else if (!/^\S+@\S+\.\S+$/.test(customer_email)) {
+        $("#customer_email_error").text('Please enter a valid email address').css('color','red'); hasErrors = true;
+    }
+    if (!customer_mobile_number) {
+        $("#customer_mobile_number_error").text('Mobile Number is required').css('color','red'); hasErrors = true;
+    } else if (!/^\d{10}$/.test(customer_mobile_number.replace(/\D/g,''))) {
+        $("#customer_mobile_number_error").text('Please enter a valid 10-digit mobile number').css('color','red'); hasErrors = true;
+    }
+
+    if (!device_name) { $("#device_problem_error").text('Please select device').css('color','red'); hasErrors = true; }
+    if (!brand_name) { $("#model_name_error").text('Please select brand').css('color','red'); hasErrors = true; }
+    if (!model_name) { $("#model_name_error").text('Please select model').css('color','red'); hasErrors = true; }
+    if (!selected_slotservice) { $("#slotservice_error").text('Service center is required').css('color','red'); hasErrors = true; }
+    if (!service_types) { $("#service_type_error").text('Service type is required').css('color','red'); hasErrors = true; }
+    if (!booking_date) { $("#onsite_booking_date_error").text('Booking date is required').css('color','red'); hasErrors = true; }
+    if (!time_slots) { $("#time_slot_error_onsite").text('Time slot is required').css('color','red'); hasErrors = true; }
+    
+    // Check pricing specifically
+    if (!pricing) {
+        $("#model_name_error").text('Please select device model to calculate pricing').css('color','red'); hasErrors = true;
+    } else if (!total_amount || Number(total_amount) <= 0) { 
+        $("#service_type_error").text('Invalid total amount - please reselect device model').css('color','red'); 
+        hasErrors = true; 
+        console.error('Total amount is invalid:', total_amount);
+    }
+
+    if (hasErrors) {
+        console.log('❌ Validation failed, not submitting');
+        return;
+    }
+
+    let $btn = $(this);
+    
+    // disable button and show spinner
+    $btn.prop('disabled', true);
+    $('#onsite_spinner').show();
+
+    // Prepare form data
+    let formData = new FormData();
+    
+    // Add all required fields
+    formData.append('device_name', device_name);
+    formData.append('device_problems', device_problems);
+    formData.append('brand_name', brand_name);
+    formData.append('model_name', model_name);
+    formData.append('serial_number', serial_number);
+    formData.append('write_issue', write_issue);
+    formData.append('customer_name', customer_name);
+    formData.append('customer_email', customer_email);
+    formData.append('customer_mobile_number', customer_mobile_number);
+    formData.append('customer_address_home', customer_address_home);
+    formData.append('selected_slotservice', selected_slotservice);
+    formData.append('service_types', service_types);
+    formData.append('booking_date', booking_date);
+    formData.append('time_slots', time_slots);
+    formData.append('pick_up_drop_charge', pick_up_drop_charge);
+    formData.append('diagnostic_charges', diagnostic_charges);
+    formData.append('total_charges', total_amount);
+    formData.append('website_url', window.location.href);
+
+    // Submit via AJAX
+    $.ajax({
+        url: '/api/onsite-booking/',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        headers: {
+            'X-CSRFToken': getCookie('csrftoken')
+        },
+        success: function(response) {
+            console.log('✅ Onsite Booking Response:', response);
+            if (response.status === 'success' && response.payment_link) {
+                // Immediately disable the booked time slot
+                let selectedTimeSlot = time_slots;
+                let selectedServiceCenter = selected_slotservice;
+                
+                console.log('Disabling slot:', selectedTimeSlot, 'at', selectedServiceCenter);
+                
+                if (selectedTimeSlot) {
+                    $('#onsite-time-slots .time-slot').each(function() {
+                        const timeText = $(this).find('span').text().trim();
+                        if (timeText === selectedTimeSlot) {
+                            $(this).addClass('disabled');
+                            $(this).find('input').prop('disabled', true);
+                            $(this).css('opacity', '0.5');
+                        }
+                    });
+                }
+                
+                // Refresh slot availability before redirecting to payment
+                if (booking_date && selectedServiceCenter) {
+                    $.ajax({
+                        url: '/api/check-onsite-availability/', 
+                        type: "GET",
+                        data: { date: booking_date },
+                        dataType: 'json',
+                        success: function(data) {
+                            if (data.success) {
+                                let bookings = data.dates; 
+                                updateTimeSlotAvailability(new Date(booking_date), '#onsite-time-slots', bookings, 'onsite', selectedServiceCenter);
+                            }
+                        },
+                        complete: function() {
+                            // Redirect to payment page after refreshing availability
+                            window.location.href = response.payment_link;
+                        }
+                    });
+                } else {
+                    // Redirect to payment page
+                    window.location.href = response.payment_link;
+                }
+            } else {
+                alert('Error: ' + (response.message || 'Unknown error'));
+                $btn.prop('disabled', false);
+                $('#onsite_spinner').hide();
+            }
+        },
+        error: function(xhr) {
+            console.error('Booking error:', xhr);
+            let errorMsg = 'An error occurred. Please try again.';
+            try {
+                let response = JSON.parse(xhr.responseText);
+                errorMsg = response.message || errorMsg;
+                if (response.errors) {
+                    let errorList = [];
+                    for (let field in response.errors) {
+                        errorList.push(field + ': ' + response.errors[field][0].message);
+                    }
+                    errorMsg = errorList.join('\n');
+                }
+            } catch(e) {}
+            alert('Error: ' + errorMsg);
+            $btn.prop('disabled', false);
+            $('#onsite_spinner').hide();
+        }
+    });
+});
+
+// Enhanced Brand Models Configuration with Pricing
+const brandModels = {
+    "Dell": {
+        laptop: {
+            models: ['Inspiron', 'Vostro', 'Alienware', 'Latitude', 'XPS', 'Precision'],
+            pricing: {
+                // 'Inspiron': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00' },
+                'Inspiron': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1.00' },
+                'Vostro': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00' },
+                'Alienware': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Latitude': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'XPS': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Precision': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' }
+            }
+        },
+        desktop: {
+            models: ['Inspiron', 'Vostro', 'Alienware', 'Latitude', 'XPS', 'Precision'],
+            pricing: {
+                'Inspiron': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Vostro': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Alienware': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' },
+                'Latitude': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' },
+                'XPS': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Precision': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' }
+            }
+        },
+        allinone: {
+            models: ['Inspiron', 'Vostro', 'Alienware', 'Latitude', 'XPS', 'Precision'],
+            pricing: {
+                'Inspiron': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Vostro': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Alienware': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' },
+                'Latitude': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' },
+                'XPS': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00' },
+                'Precision': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00' }
+            }
+        }
+    },
+    "Apple": {
+        laptop: {
+            models: ['Macbook Pro', 'Macbook', 'Mac Air'],
+            pricing: {
+                'Macbook Pro': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 3,245.00' },
+                'Macbook': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 3,245.00' },
+                'Mac Air': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 2,655.00' },
+            }
+        },
+        desktop: {
+            models: ['iMac', 'Macmini'],
+            pricing: {
+                'iMac': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 3,245.00' },
+                'Macmini': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 2,655.00' }
+            }
+        },
+        allinone: {
+            models: ['iPad Mini', 'iPad', 'iPad Pro'],
+            pricing: {
+                'iPad Mini': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 2,655.00' },
+                'iPad': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 2,655.00' },
+                'iPad Pro': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 885.00', total_charges: '₹ 3,245.00' }
+            }
+        }
+    },
+    "HP": {
+        laptop: {
+            models: ['Pavilion', 'Envy', 'Spectre', 'Omni Book', 'Omen', 'Victus', 'ChromeBook', 'Probook', 'EliteBook', 'Zbook', 'Elitebook Ultra', 'Think Client'],
+            pricing: {
+                'Pavilion': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Envy': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Spectre': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Omni Book': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Omen': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Victus': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'ChromeBook': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Probook': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'EliteBook': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Zbook': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Elitebook Ultra': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Think Client': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'}
+            }
+        },
+        desktop: {
+            models: ['Omnidesk', 'Pavilion', 'Victus', 'Omen', 'Hp Pro', 'Z by Hp', 'Elite Desktop', 'Chromebok', 'Hp Thin Clients'],
+            pricing: {
+                'Omnidesk': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Pavilion': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Victus': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'Omen': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'Hp Pro': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'Z by Hp': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'Elite Desktop': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Chromebok': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Hp Thin Clients': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'}
+            }
+        },
+        allinone: {
+            models: ['Hp Envy', 'OmniStudio', 'All In One'],
+            pricing: {
+                'Hp Envy': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'OmniStudio': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'All In One': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'}
+            }
+        }
+    },
+    "Lenovo": {
+        laptop: {
+            models: ['Thinkpad', 'ThinkBook', 'YOGA', 'LEGION', 'IDEAPAD', 'LENOVO', 'LENOVO LOQ'],
+            pricing: {
+                'Thinkpad': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'ThinkBook': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'YOGA': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'LEGION': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'IDEAPAD': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'LENOVO': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'LENOVO LOQ': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'}
+            }
+        },
+        desktop: {
+            models: ['ThinkCentre', 'LEGION', 'LOQ'],
+            pricing: {
+                'ThinkCentre': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'LEGION': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+                'LOQ': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'}
+            }
+        },
+        allinone: {
+            models: ['IDEACENTRE'],
+            pricing: {
+                'IDEACENTRE': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+            }
+        }
+    },
+    "Acer": {
+        laptop: {
+            models: ['Aspire', 'Nitro', 'Swift', 'Predator Helios', 'Helios', 'Spin', 'Aspire Vero'],
+            pricing: {
+                'Aspire': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Nitro': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Swift': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Predator Helios': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Helios': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Spin': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Aspire Vero': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'}
+            }
+        },
+        desktop: {
+            models: ['Aspire', 'Gaming'],
+            pricing: {
+                'Aspire': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Gaming': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'}
+            }
+        },
+        allinone: {
+            models: ['Aspire'],
+            pricing: {
+                'Aspire': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'}
+            }
+        }
+    },
+    "Asus": {
+        laptop: {
+            models: ['ProArt', 'Zenbook', 'Vivobook', 'Chromebooks', 'ExpertsBook', 'ROG', 'TUF'],
+            pricing: {
+                'ProArt': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Zenbook': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Vivobook': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'Chromebooks': { diagnostic_charges: '₹ 1475.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 1,925.00'},
+                'ExpertsBook': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'ROG': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'TUF': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+            }
+        },
+        desktop: {
+            models: ['Asus Desktop', 'Expert Center'],
+            pricing: {
+                'Asus Desktop': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+                'Expert Center': { diagnostic_charges: '₹ 1770.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,220.00'},
+            }
+        },
+        allinone: {
+            models: ['All in One'],
+            pricing: {
+                'All in One': { diagnostic_charges: '₹ 2360.00', pick_up_drop_charge: '₹ 450.00', total_charges: '₹ 2,810.00'},
+            }
+        }
+    }
+};
+
+let currentStep = 0;
+const steps = document.querySelectorAll(".form-stepnew");
+let device_name = '';
+let selectedBrand = preselectedBrand ? normalizeBrand(preselectedBrand) : '';
+let selectedModel = '';
+
+// Function to select device and populate brands
+function selectDevice(element) {
+    // Remove active class from all device buttons
+    document.querySelectorAll('.icon-btn').forEach(btn => btn.classList.remove('active1'));
+    
+    // Add active class to clicked button
+    element.classList.add('active1');
+    
+    // Get device value
+    let selectedDevice = element.getAttribute('data-value');
+    device_name = selectedDevice;
+    
+    // ✅ Hidden input me value set karo
+    document.getElementById("device_name").value = selectedDevice;
+    
+    // Clear any existing errors
+    $("#device_error").text("");
+    
+    // Hide all model sections immediately
+    document.querySelectorAll('.model-select').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Clear model selections
+    clearModelSelections();
+
+    // Brand dropdown logic
+    if (!preselectedBrand) {
+        const brandSelect = document.getElementById('brand-name');
+        while (brandSelect.options.length > 1) {
+            brandSelect.remove(1);
+        }
+        
+        let availableBrands = [];
+        if (selectedDevice === 'ipad') {
+            availableBrands = ["Apple"];
+        } else if (selectedDevice === 'allinone') {
+            availableBrands = ["Acer", "Asus", "Dell", "HP", "Lenovo"];
+        } else {
+            availableBrands = ["Acer", "Apple", "Asus", "Dell", "HP", "Lenovo"];
+        }
+
+        // Populate brand dropdown
+        availableBrands.forEach(function(brand) {
+            let option = document.createElement('option');
+            option.value = brand;
+            option.text = brand;
+            brandSelect.appendChild(option);
+        });
+
+        // Clear brand selection
+        brandSelect.value = '';
+        selectedBrand = '';
+    } else {
+        // If brand is preselected, populate models for the selected device
+        if (selectedBrand && selectedDevice) {
+            populateModelDropdown(selectedBrand, selectedDevice);
+        }
+    }
+    
+    console.log('Selected Device:', selectedDevice);
+}
+
+// Function to populate all brands initially
+function populateAllBrands() {
+    if (!preselectedBrand) {
+        const brandSelect = document.getElementById('brand-name');
+        // Clear existing options except the first
+        while (brandSelect.options.length > 1) {
+            brandSelect.remove(1);
+        }
+        
+        const allBrands = ["Acer", "Apple", "Asus", "Dell", "HP", "Lenovo"];
+        allBrands.forEach(function(brand) {
+            let option = document.createElement('option');
+            option.value = brand;
+            option.text = brand;
+            brandSelect.appendChild(option);
+        });
+    }
+}
+
+// Function to clear model selections
+function clearModelSelections() {
+    // Clear all model dropdowns
+    document.getElementById('laptop-model-name').innerHTML = '<option selected disabled>Select Model</option>';
+    document.getElementById('desktop-model-name').innerHTML = '<option selected disabled>Select Model</option>';
+    document.getElementById('allinone-model-name').innerHTML = '<option selected disabled>Select Model</option>';
+    
+    // Clear model error
+    $("#model_name_error").text("");
+    
+    // Reset selected model variable
+    selectedModel = '';
+    
+    // Hide all model sections
+    document.querySelectorAll('.model-select').forEach(section => {
+        section.style.display = 'none';
+    });
+}
+
+// Function to populate model dropdown
+function populateModelDropdown(brand, deviceType) {
+    // Hide all model sections first
+    document.querySelectorAll('.model-select').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Get the appropriate model dropdown based on device type
+    let modelSelect, modelSection;
+    if (deviceType === 'laptop') {
+        modelSelect = document.getElementById('laptop-model-name');
+        modelSection = document.getElementById('laptop-model');
+    } else if (deviceType === 'desktop') {
+        modelSelect = document.getElementById('desktop-model-name');
+        modelSection = document.getElementById('desktop-model');
+    } else if (deviceType === 'allinone' || deviceType === 'ipad') {
+        modelSelect = document.getElementById('allinone-model-name');
+        modelSection = document.getElementById('allinone-model');
+    } else {
+        return; // Invalid device type
+    }
+    
+    // Clear existing options
+    modelSelect.innerHTML = '<option selected disabled>Select Model</option>';
+    
+    // Check if brand has models for this device type
+    if (brandModels[brand] && brandModels[brand][deviceType] && brandModels[brand][deviceType].models && brandModels[brand][deviceType].models.length > 0) {
+        // Populate dropdown with models
+        brandModels[brand][deviceType].models.forEach(model => {
+            const option = document.createElement('option');
+            option.value = model;
+            option.textContent = model;
+            modelSelect.appendChild(option);
+        });
+        
+        // Show the appropriate model section
+        modelSection.style.display = 'block';
+        
+        console.log(`Populated ${deviceType} models for ${brand}:`, brandModels[brand][deviceType].models);
+    } else {
+        // Hide the model section if no models available
+        modelSection.style.display = 'none';
+        $("#model_name_error").text(`No models available for ${brand} ${deviceType}s`).css("color", "red");
+    }
+}
+
+// Initialize and add event listeners when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const brandSelect = document.getElementById('brand-name');
+    
+    // Add event listener for brand selection
+    if (brandSelect && brandSelect.tagName === 'SELECT') {
+        brandSelect.addEventListener('change', function() {
+            const brand = this.value;
+            selectedBrand = normalizeBrand(brand);
+            
+            // Clear any existing errors
+            $("#brand_error").text("");
+            $("#model_name_error").text("");
+            
+            // Clear model selections
+            clearModelSelections();
+            
+            if (selectedBrand && device_name) {
+                // Both brand and device are selected, populate models
+                populateModelDropdown(selectedBrand, device_name);
+                console.log('Brand selected, populating models for:', selectedBrand, device_name);
+            } else if (!selectedBrand) {
+                // Clear everything if no brand selected
+                clearModelSelections();
+            }
+            
+            console.log('Selected Brand:', selectedBrand);
+        });
+    }
+
+    // Date picker show
+    document.getElementById("booking-date").addEventListener("click", function() {
+        this.showPicker();
+    });
+    
+    document.getElementById("booking-date-onsite").addEventListener("click", function() {
+        this.showPicker();
+    });
+    
+    // Set minimum date to today and maximum to 30 days from now
+    let today = new Date().toISOString().split("T")[0];
+    let maxDate = new Date();
+    maxDate.setDate(maxDate.getDate() + 30);
+    let maxDateStr = maxDate.toISOString().split("T")[0];
+    
+    document.getElementById("booking-date").setAttribute("min", today);
+    document.getElementById("booking-date").setAttribute("max", maxDateStr);
+    document.getElementById("booking-date-onsite").setAttribute("min", today);
+    document.getElementById("booking-date-onsite").setAttribute("max", maxDateStr);
+});
+
+// Step navigation functions
+function nextStep() {
+    let hasError = false;
+
+    let model_name = $("#laptop-model-name").val();
+    let desktop_model = $("#desktop-model-name").val();
+    let all_in_one = $("#allinone-model-name").val();
+    let device_problems = $("select[name='device_problems']").val();
+    let write_issue_val = $("textarea[name='write_issue']").val();
+
+    $("#device_error").text("");
+    $("#model_name_error").text("");
+    $("#device_problem_error").text("");
+    $("#write_issue_error").text("");
+
+    function isEmpty(value) {
+        return value === undefined || value === null || value === "" || value === "Selected";
+    }
+
+    if (isEmpty(device_name)) {
+        $("#device_error").text("Device is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if (isEmpty(selectedBrand)) {
+        $("#brand_error").text("Brand is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if ($("#laptop-model").is(":visible") && isEmpty(model_name)) {
+        $("#model_name_error").text("Model Name is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if ($("#desktop-model").is(":visible") && isEmpty(desktop_model)) {
+        $("#model_name_error").text("Model Name is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if ($("#allinone-model").is(":visible") && isEmpty(all_in_one)) {
+        $("#model_name_error").text("Model Name is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if(isEmpty(write_issue_val)){
+        $("#write_issue_error").text("Issue is required").css("color", "red");
+        hasError = true;
+    }
+    
+    if (isEmpty(device_problems)) {
+        $("#device_problem_error").text("Device Problem is required").css("color", "red");
+        hasError = true;
+    }
+
+    if (!hasError) {
+        console.log(device_name, selectedBrand, model_name || desktop_model || all_in_one, device_problems, '========================');
+        
+        if (currentStep < steps.length - 1) {
+            steps[currentStep].classList.remove("activenew");
+            currentStep++;
+            steps[currentStep].classList.add("activenew");
+        }    
+    }    
+}
+
+function prevStep() {
+    if (currentStep > 0) {
+        steps[currentStep].classList.remove("activenew");
+        currentStep--;
+        steps[currentStep].classList.add("activenew");
+    }
+}
+
+// Service selection functions
+function selectSlot(radio) {
+    // Get all time slot elements
+    const allSlots = document.querySelectorAll('.time-slot');
+
+    // Remove the active class from all time slots
+    allSlots.forEach(slot => slot.classList.remove('active'));
+
+    // Add the active class to the selected slot's parent
+    const parent = radio.closest('.time-slot');
+    parent.classList.add('active');
+}
+
+function selectSlotservice(radio) {
+    // Get all service center elements
+    const allSlots = document.querySelectorAll('.slotservice');
+
+    // Remove the active class from all service centers
+    allSlots.forEach(slot => slot.classList.remove('active'));
+
+    // Add the active class to the selected service center's parent
+    const parent = radio.closest('.slotservice');
+    parent.classList.add('active');
+}
+
+function selectServicetype(radio) {
+    // Get all service type elements
+    const allSlots = document.querySelectorAll('.servicetype');
+
+    // Remove the active class from all service types
+    allSlots.forEach(slot => slot.classList.remove('active'));
+
+    // Add the active class to the selected service type's parent
+    const parent = radio.closest('.servicetype');
+    parent.classList.add('active');
+
+    // Hide all content divs
+    const allContent = document.querySelectorAll('.service-content');
+    allContent.forEach(content => content.classList.remove('active'));
+
+    // Show the corresponding content div
+    const center = radio.getAttribute('data-center');
+    const contentDiv = document.getElementById(center);
+    if (contentDiv) {
+        contentDiv.classList.add('active');
+    }
+
+    // Toggle between Submit and Pay Now buttons
+    const submitButton = document.querySelector('.customsubmit[name="visit_service_data"]');
+    const payNowButton = document.querySelector('.customsubmit.paynow');
+    if (center === 'onsite') {
+        // Show "Pay Now" button, hide "Submit" button
+        submitButton.style.display = 'none';
+        payNowButton.style.display = 'inline-block';
+    } else {
+        // Show "Submit" button, hide "Pay Now" button
+        submitButton.style.display = 'inline-block';
+        payNowButton.style.display = 'none';
+    }
+}
+
+// Form validation and event handlers
+$(document).ready(function() {
+    // Clear errors on input
+    $("textarea[name='write_issue']").on("keyup", function() {
+        $("#write_issue_error").text("");
+    });
+    
+    $("select[name='device_problems']").on('change', function() {
+        $("#device_problem_error").text("");
+    });
+
+    // Personal information validation
+    $("button[name='second_stage']").on('click', function () {
+        let customer_name = $("input[name='customer_name']").val().trim();
+        let customer_mobile_number = $("input[name='customer_mobile_number']").val().trim();
+        let customer_address_home = $("textarea[name='customer_address_home']").val().trim();
+        let customer_email = $("input[name='customer_email']").val().trim();
+
+        $("#customer_name_error, #customer_email_error, #customer_mobile_number_error, #customer_address_error").text("");
+
+        let hasError = false;
+
+        if (!customer_name) {
+            $("#customer_name_error").text("Name is required").css("color", "red");
+            hasError = true;
+        }
+
+        if (!customer_email) {
+            $("#customer_email_error").text("Email is required").css("color", "red");
+            hasError = true;
+        } else if (!/^\S+@\S+\.\S+$/.test(customer_email)) {
+            $("#customer_email_error").text("Please enter a valid email address").css("color", "red");
+            hasError = true;
+        }
+
+        if (!customer_mobile_number) {
+            $("#customer_mobile_number_error").text("Mobile Number is required").css("color", "red");
+            hasError = true;
+        } else if (!/^[6-9]\d{9}$/.test(customer_mobile_number)) {
+            $("#customer_mobile_number_error").text("Please enter a valid 10-digit Indian mobile number").css("color", "red");
+            hasError = true;
+        }
+
+        if (!customer_address_home) {
+            $("#customer_address_error").text("Address is required").css("color", "red");
+            hasError = true;
+        }
+
+        if (!hasError) {
+            nextStep();
+        }
+    });
+
+    // Clear errors on input for personal info
+    $("input[name='customer_name'], input[name='customer_email'], input[name='customer_mobile_number'], textarea[name='customer_address_home']").on('input', function() {
+        let fieldName = $(this).attr('name');
+        let errorElement = $("#" + fieldName + "_error");
+        
+        if ($(this).val()) {
+            errorElement.text("");
+        }
+    });
+
+    // Mobile number validation
+    $("input[name='customer_mobile_number']").on('keyup', function() {
+        const mobile = $(this).val();
+        const errorElement = $("#customer_mobile_number_error");
+
+        if (!/^[6-9]\d{9}$/.test(mobile)) {
+            errorElement.text("Please enter a valid 10-digit Indian mobile number").show();
+        } else {
+            errorElement.hide();
+        }
+    });
+
+    // Email validation
+    $("input[name='customer_email']").on('keyup', function() {
+        const customer_email = $(this).val();
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        
+        if (customer_email === '') {
+            $("#customer_email_error").text("Email is required");
+        } else if (!emailPattern.test(customer_email)) {
+            $("#customer_email_error").text("Enter valid email ID");
+        } else {
+            $("#customer_email_error").text("");
+        }
+    });
+
+    // Service center selection
+    $("input[name='slotservice']").on("change", function () {
+        $("#slotservice_error").text("");
+    });
+
+    // Service type selection
+    $("#visit_service_center, #onsite_visit_service").on("change", function () {
+        $("#service_type_error").text("");
+    });
+
+    // Date selection
+    $("input[name='booking_date']").on("input", function () {
+        $("#booking_date_error").text("");
+    });
+
+    // Time slot selection
+    $("input[name='time-slot']").on("change", function () {
+        $("#time_slot_error").text("");
+    });
+
+    // Onsite time slot selection
+    $("input[name='time-slot-onsite']").on("change", function () {
+        $("#time_slot_error_onsite").text("");
+    });
+
+    // Onsite date selection
+    $("input[name='booking_date_onsite']").on("change", function () {
+        $("#onsite_booking_date_error").text("");
+    });
+
+    // Enhanced Date Change Handler for Offsite
+    $("input[name='booking_date']").on("change", function() {
+        let selectedDate = $(this).val();
+        let inputDate = new Date(selectedDate);
+        
+        // Holiday validation
+        let holidays = [
+            "2025-01-26", "2025-02-19", "2025-02-26", "2025-03-14", "2025-03-30", 
+            "2025-03-31", "2025-04-06", "2025-04-10", "2025-04-14", "2025-04-18", 
+            "2025-05-01", "2025-05-12", "2025-06-07", "2025-07-06", "2025-08-15", 
+            "2025-08-16", "2025-08-27", "2025-09-05", "2025-10-02", "2025-10-21", 
+            "2025-10-22", "2025-11-05", "2025-12-25"
+        ];
+
+        let formattedDate = inputDate.toISOString().split('T')[0];
+
+        if (inputDate.getDay() === 0) { 
+            $("#booking_date_error")
+                .text("Service is not available on Sunday.")
+                .css({"display": "block", "color": "red"});
+            this.value = ""; 
+            return;
+        } else if (holidays.includes(formattedDate)) { 
+            $("#booking_date_error")
+                .text("Service is not available on this holiday.")
+                .css({"display": "block", "color": "red"});
+            this.value = "";
+            return;
+        } else {
+            $("#booking_date_error").css("display", "none"); 
+        }
+
+        let selectedServiceCenter = $("input[name='slotservice']:checked").next("span").text() || '';
+        if (!selectedServiceCenter) {
+            $("#booking_date_error").text('⚠️ Please select service center first').css('color','red');
+            return;
+        }
+
+        console.log('📅 Offsite Date Changed:', selectedDate);
+        console.log('🏢 Current Service Center:', selectedServiceCenter);
+
+        // Check booking availability and update time slots
+        $.ajax({
+            url: "{% url 'bookings:check_offsite_availability' %}", 
+            type: "GET",
+            data: { date: selectedDate },
+            dataType: 'json',
+            success: function(data) {
+                console.log("Offsite AJAX response received:", data);
+
+                if (data.success) {
+                    let bookings = data.dates; 
+                    console.log(bookings, '=============offsite bookings============================');
+
+                    // Update time slots with current time and booking limits
+                    updateTimeSlotAvailability(inputDate, '#offsite-time-slots', bookings, 'offsite', selectedServiceCenter);
+                } else {
+                    console.log("No offsite booking data found.");
+                    // Still update for current time
+                    updateTimeSlotAvailability(inputDate, '#offsite-time-slots', [], 'offsite', selectedServiceCenter);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error("Offsite AJAX error:", status, error, xhr.responseText);
+                $("#booking_date_error").text("Error checking booking availability. Please try again.").css("color", "red");
+            }
+        });
+    });
+
+    // Enhanced Date Change Handler for Onsite
+    $("input[name='booking_date_onsite']").on("change", function() {
+        let selectedDates = $(this).val();
+        let inputDate = new Date(selectedDates);
+        
+        // Holiday validation
+        let holidays = [
+            "2025-01-26", "2025-02-19", "2025-02-26", "2025-03-14", "2025-03-30", 
+            "2025-03-31", "2025-04-06", "2025-04-10", "2025-04-14", "2025-04-18", 
+            "2025-05-01", "2025-05-12", "2025-06-07", "2025-07-06", "2025-08-15", 
+            "2025-08-16", "2025-08-27", "2025-09-05", "2025-10-02", "2025-10-21", 
+            "2025-10-22", "2025-11-05", "2025-12-25"
+        ];
+    
+        let formattedDate = inputDate.toISOString().split('T')[0];
+    
+        if (inputDate.getDay() === 0) { 
+            $("#onsite_booking_date_error")
+                .text("Service is not available on Sunday.")
+                .css({"display": "block", "color": "red"});
+            this.value = ""; 
+            return;
+        } else if (holidays.includes(formattedDate)) { 
+            $("#onsite_booking_date_error")
+                .text("Service is not available on this holiday.")
+                .css({"display": "block", "color": "red"});
+            this.value = "";
+            return;
+        } else {
+            $("#onsite_booking_date_error").css("display", "none"); 
+        }
+
+        let selectedServiceCenter = $("input[name='slotservice']:checked").next("span").text() || '';
+        if (!selectedServiceCenter) {
+            $("#onsite_booking_date_error").text('⚠️ Please select service center first').css('color','red');
+            return;
+        }
+
+        console.log('📅 Onsite Date Changed:', selectedDates);
+        console.log('🏢 Current Service Center:', selectedServiceCenter);
+
+        $.ajax({
+            url: "/api/check-onsite-availability/", 
+            type: "GET",
+            data: { date: selectedDates },
+            dataType: 'json',
+            success: function(data) {
+                console.log("Onsite AJAX response received:", data);
+
+                if (data.success) {
+                    let bookings = data.dates; 
+                    console.log(bookings, '=============onsite bookings============================');
+
+                    // Update time slots with current time and booking limits
+                    updateTimeSlotAvailability(inputDate, '#onsite-time-slots', bookings, 'onsite', selectedServiceCenter);
+                } else {
+                    console.log("No onsite booking data found.");
+                    // Still update for current time
+                    updateTimeSlotAvailability(inputDate, '#onsite-time-slots', [], 'onsite', selectedServiceCenter);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error("Onsite AJAX error:", status, error, xhr.responseText);
+                $("#onsite_booking_date_error").text("Error checking booking availability. Please try again.").css("color", "red");
+            }
+        });
+    });
+
+    // Update time slots when service center changes
+    $("input[name='slotservice']").on('change', function() {
+        const selectedServiceCenter = $(this).next("span").text();
+        console.log('🏢 Service Center Changed:', selectedServiceCenter);
+        
+        const dateInputOnsite = $("#booking-date-onsite").val();
+        const dateInputOffsite = $("#booking-date").val();
+        
+        // Update onsite slots
+        if (dateInputOnsite) {
+            const inputDate = new Date(dateInputOnsite);
+            console.log('Updating onsite slots for:', dateInputOnsite);
+            
+            $.ajax({
+                url: '/api/check-onsite-availability/', 
+                type: "GET",
+                data: { date: dateInputOnsite },
+                dataType: 'json',
+                success: function(data) {
+                    if (data.success) {
+                        updateTimeSlotAvailability(inputDate, '#onsite-time-slots', data.dates, 'onsite', selectedServiceCenter);
+                    } else {
+                        updateTimeSlotAvailability(inputDate, '#onsite-time-slots', [], 'onsite', selectedServiceCenter);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Onsite AJAX error:", error);
+                }
+            });
+        }
+        
+        // Update offsite slots
+        if (dateInputOffsite) {
+            const inputDate = new Date(dateInputOffsite);
+            console.log('Updating offsite slots for:', dateInputOffsite);
+            
+            $.ajax({
+                url: "{% url 'bookings:check_offsite_availability' %}", 
+                type: "GET",
+                data: { date: dateInputOffsite },
+                dataType: 'json',
+                success: function(data) {
+                    if (data.success) {
+                        updateTimeSlotAvailability(inputDate, '#offsite-time-slots', data.dates, 'offsite', selectedServiceCenter);
+                    } else {
+                        updateTimeSlotAvailability(inputDate, '#offsite-time-slots', [], 'offsite', selectedServiceCenter);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Offsite AJAX error:", error);
+                }
+            });
+        }
+    });
+
+    // Model selection for pricing - FIXED VERSION
+    $("select[name='laptop_model_name']").on('change', function(){
+        let laptop_model_name = $(this).val();
+        $("#model_name_error").text("");
+        
+        if (device_name === 'laptop' && laptop_model_name && selectedBrand) {
+            setPricing(laptop_model_name, 'laptop');
+        }
+    });
+
+    $("select[name='desktop_model_name']").on('change', function(){
+        let desktop_model_name = $(this).val();
+        $("#model_name_error").text("");
+        
+        if (device_name === 'desktop' && desktop_model_name && selectedBrand) {
+            setPricing(desktop_model_name, 'desktop');
+        }
+    });
+
+    $("select[name='all_in_one']").on('change', function(){
+        let all_in_one_model = $(this).val();
+        $("#model_name_error").text("");
+        
+        if ((device_name === 'allinone' || device_name === 'ipad') && all_in_one_model && selectedBrand) {
+            setPricing(all_in_one_model, 'allinone');
+        }
+    });
+
+    // Enhanced Pricing function
+    function setPricing(model, deviceType) {
+        // Check if brand and model have pricing defined
+        if (selectedBrand && brandModels[selectedBrand] && brandModels[selectedBrand][deviceType] && 
+            brandModels[selectedBrand][deviceType].pricing && brandModels[selectedBrand][deviceType].pricing[model]) {
+            
+            const pricing = brandModels[selectedBrand][deviceType].pricing[model];
+            
+            $("#diagnostic_charges").text(pricing.diagnostic_charges);
+            $("#pick_up_drop_charge").text(pricing.pick_up_drop_charge);
+            $("#total_charges").text(pricing.total_charges);
+            
+            console.log(`✅ Applied pricing for ${selectedBrand} ${model} ${deviceType}:`, pricing);
+            
+            // Debug: Parse the amounts to verify
+            let total = parseFloat(pricing.total_charges.replace(/[^0-9.]/g, "") || 0);
+            console.log(`💰 Parsed total amount: ₹${total}`);
+            
+        } else {
+            console.error(`❌ Pricing not found for ${selectedBrand} ${model} ${deviceType}`);
+            // Fallback pricing if no specific pricing found
+            let diagnostic = '₹ 1475.00';
+            let pickup = '₹ 450.00';
+            let total = '₹ 1,925.00';
+
+            if (deviceType === 'allinone') {
+                diagnostic = '₹ 2360.00';
+                total = '₹ 2,810.00';
+            }
+
+            $("#diagnostic_charges").text(diagnostic);
+            $("#pick_up_drop_charge").text(pickup);
+            $("#total_charges").text(total);
+            
+            console.log(`⚠️ Applied fallback pricing for ${selectedBrand} ${model} ${deviceType}`);
+        }
+    }
+
+    // Visit service center submission - FIXED VERSION
+    $("button[name='visit_service_data']").on('click', function(){
+        // Compute model_name at submit time to avoid stale vars
+        let model_name = $("select[name='laptop_model_name']").val() || $("select[name='desktop_model_name']").val() || $("select[name='all_in_one']").val() || '';
+        let device_problems = $("select[name='device_problems']").val();
+        let brand_name = $("select[name='brand_name']").val() || $("input[name='brand_name']").val();
+        let serial_number = $("input[name='serial_number']").val();
+        let write_issue = $("textarea[name='write_issue']").val();
+        
+        let customer_name = $("input[name='customer_name']").val();
+        let customer_mobile_number = ($("input[name='customer_mobile_number']").val() || '').replace(/\D/g,'');
+        let customer_address_home = $("textarea[name='customer_address_home']").val();
+        let customer_email = $("input[name='customer_email']").val();
+        let selected_slotservice = $("input[name='slotservice']:checked").next("span").text();
+        let service_types = $("#visit_service_center:checked").next("span").text();
+        let booking_date = $("input[name='booking_date']").val();
+        let time_slots = $("input[name='time-slot']:checked").val();
+        
+        let errors = false;
+
+        if (!selected_slotservice) {
+            $("#slotservice_error").text("Service center is required").css("color", "red");
+            errors = true;
+        }
+        
+        if (!service_types) {
+            $("#service_type_error").text("Service type is required").css("color", "red");
+            errors = true;
+        }
+        
+        if (!booking_date) {
+            $("#booking_date_error").text("Booking date is required").css("color", "red");
+            errors = true;
+        }
+        
+        if (!time_slots) {
+            $("#time_slot_error").text("Time slot is required").css("color", "red");
+            errors = true;
+        }
+
+        if (errors) {
+            return;
+        }
+        
+        $(this).prop('disabled', true);
+        $("#offsite_spinner").show();
+        
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'bookings:offsite_booking_submit' %}",
+            contentType: 'application/x-www-form-urlencoded',
+            headers: {
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            data: {
+                device_name: device_name,
+                device_problems: device_problems,
+                brand_name: brand_name,
+                model_name: model_name,
+                serial_number: serial_number,
+                write_issue: write_issue,
+                customer_name: customer_name,
+                customer_email: customer_email,
+                customer_address_home: customer_address_home,
+                customer_mobile_number: customer_mobile_number,
+                selected_slotservice: selected_slotservice,
+                service_types: service_types,
+                booking_date: booking_date,
+                time_slots: time_slots,
+                website_url: window.location.href
+            },
+            success: function (response) {
+                $("#offsite_spinner").hide();
+                $("button[name='visit_service_data']").prop('disabled', false);
+                
+                console.log('Full response:', response, 'Type:', typeof response);
+                
+                try {
+                    let result;
+                    if (typeof response === 'string') {
+                        result = JSON.parse(response);
+                    } else {
+                        result = response;
+                    }
+                    
+                    console.log('Parsed result:', result);
+                    
+                    if (result.status === 'success') {
+                        // Immediately disable the booked time slot
+                        let selectedTimeSlot = time_slots;
+                        let selectedServiceCenter = selected_slotservice;
+                        
+                        console.log('✅ Offsite Booking Successful!');
+                        console.log('Disabling slot:', selectedTimeSlot, 'at', selectedServiceCenter);
+                        
+                        if (selectedTimeSlot) {
+                            $('#offsite-time-slots .time-slot').each(function() {
+                                const timeText = $(this).find('span').text().trim();
+                                if (timeText === selectedTimeSlot) {
+                                    $(this).addClass('disabled');
+                                    $(this).find('input').prop('disabled', true);
+                                    $(this).css('opacity', '0.5');
+                                }
+                            });
+                        }
+                        
+                        // Clear form fields
+                        $("input[type='text'], input[type='email'], input[type='tel'], input[type='date']").val('');
+                        $("textarea").val('');
+                        $("select").prop('selectedIndex', 0);
+                        $("input[type='radio']").prop('checked', false);
+                        
+                        // Refresh slot availability after successful booking
+                        if (booking_date && selectedServiceCenter) {
+                            $.ajax({
+                                url: "{% url 'bookings:check_offsite_availability' %}", 
+                                type: "GET",
+                                data: { date: booking_date },
+                                dataType: 'json',
+                                success: function(data) {
+                                    if (data.success) {
+                                        let bookings = data.dates; 
+                                        updateTimeSlotAvailability(new Date(booking_date), '#offsite-time-slots', bookings, 'offsite', selectedServiceCenter);
+                                    }
+                                }
+                            });
+                        }
+                        
+                        // Display success message
+                        let messageContainer = document.getElementById('message-container');
+                        if (messageContainer) {
+                            messageContainer.textContent = '✅ Your service has been submitted successfully!';
+                            messageContainer.style.display = 'block';
+                            console.log('Message displayed');
+                            
+                            // Redirect to home page after 3 seconds
+                            setTimeout(function() {
+                                console.log('Redirecting to home...');
+                                window.location.href = "{% url 'bookings:index' %}";
+                            }, 3000);
+                        } else {
+                            console.error('Message container not found');
+                        }
+                    } else {
+                        console.error('Submission failed:', result.message);
+                        alert('Error: ' + result.message);
+                        $("button[name='visit_service_data']").prop('disabled', false);
+                    }
+                } catch (error) {
+                    console.error('Error parsing response:', error);
+                    console.error('Response was:', response);
+                    alert('An error occurred: ' + error.message);
+                    $("button[name='visit_service_data']").prop('disabled', false);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error('AJAX Error:', status, error);
+                console.error('XHR Response:', xhr.responseText);
+                $("#offsite_spinner").hide();
+                $("button[name='visit_service_data']").prop('disabled', false);
+                alert('Submission failed: ' + error);
+            }
+        });
+    });
+
+    // Handle preselected brand - FIXED VERSION
+    populateAllBrands();
+    
+    if (preselectedBrand && preselectedBrand.trim() !== '') {
+        // Format the brand name
+        const formattedPreselectedBrand = normalizeBrand(preselectedBrand);
+        
+        // Set the selectedBrand variable
+        selectedBrand = formattedPreselectedBrand;
+        
+        console.log('Preselected Brand:', formattedPreselectedBrand);
+        console.log('Brand Models Available:', brandModels[formattedPreselectedBrand]);
+        
+        // Hide all device buttons first
+        $('.icon-btn').hide();
+        
+        // Show device buttons based on available models
+        const devices = ['laptop', 'desktop', 'allinone', 'ipad'];
+        let availableDevices = [];
+        
+        devices.forEach(device => {
+            // Check if brand has models for this device
+            if (brandModels[formattedPreselectedBrand] && 
+                brandModels[formattedPreselectedBrand][device]) {
+                
+                const deviceData = brandModels[formattedPreselectedBrand][device];
+                
+                // Check if models array exists and has items
+                if (deviceData.models && Array.isArray(deviceData.models) && deviceData.models.length > 0) {
+                    console.log(`Showing ${device} for ${formattedPreselectedBrand}`);
+                    $(`.icon-btn[data-value="${device}"]`).show();
+                    availableDevices.push(device);
+                } else {
+                    console.log(`No models found for ${device} in ${formattedPreselectedBrand}`);
+                }
+            } else {
+                console.log(`${device} not defined for ${formattedPreselectedBrand}`);
+            }
+        });
+        
+        console.log('Available devices:', availableDevices);
+        
+        // If no devices are available, show error and show all devices
+        if (availableDevices.length === 0) {
+            console.error(`No devices available for ${formattedPreselectedBrand}. Showing all devices.`);
+            $('.icon-btn').show();
+            return;
+        }
+        
+        // Pre-select the first available device
+        let defaultDevice = availableDevices[0];
+        
+        // For Apple, prefer laptop if available
+        if (formattedPreselectedBrand.toLowerCase() === 'apple' && availableDevices.includes('laptop')) {
+            defaultDevice = 'laptop';
+        }
+        
+        console.log('Default device selected:', defaultDevice);
+        
+        // Click the default device button
+        const deviceButton = document.querySelector(`.icon-btn[data-value="${defaultDevice}"]`);
+        if (deviceButton && deviceButton.style.display !== 'none') {
+            setTimeout(() => {
+                console.log('Clicking device button:', defaultDevice);
+                deviceButton.click();
+            }, 100);
+        } else {
+            console.error('Device button not found or hidden:', defaultDevice);
+        }
+    } else {
+        // No preselected brand, show all devices
+        console.log('No preselected brand, showing all devices');
+        $('.icon-btn').show();
+    }
+});
+</script>
+
+{% endblock %}
